@@ -1,12 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Web Devloper and Designer in San Diego, CA</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Devloper and Designer in San Diego, CA</title>
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/in/jessica-davey/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="assets/linkedin-gray.svg" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <section id="hero">
+        <h1 class="hero-text">
+          Hi! I’m Jessica Davey, and I design and build web content. 👋🏾
+        </h1>
+        <a href="#contact" class="btn btn-primary hero-button">Get in touch</a>
+      </section>
+      <img class="down-arrow" src="assets/down-arrow.svg" />
+    </header>
+
+    <section id="projects">
+      <h2 class="project-light section-header">Projects</h2>
+      <div class="project project-light">
+        <div class="project-tile">
+          <script src="https://gist.github.com/jessicadavey/0dbdba63ac4c8c708e84cf8e50f035e9.js"></script>
+        </div>
+        <div class="project-tile">
+          <h3>Fix HTML</h3>
+          <h4>Problem</h4>
+          <p>
+            As part of my work in digital marketing, I needed to quickly remove
+            specific HTML tags from large sections of HTML code.
+          </p>
+          <h4>Solution</h4>
+          <p>
+            I created a JavaScript function to iterate through a list of tags
+            and replace them with empty strings. I embedded this function into a
+            simple web page to access it easily.
+          </p>
+          <a
+            class="body-link dark"
+            href="https://jessica-davey.medium.com/creating-a-tool-to-increase-web-development-productivity-at-work-fixhtml-9cded5442db2"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read more about FixHTML on Medium.</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://jessicadavey.github.io/fixhtml/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit FixHTML <img src="assets/open_in_new.svg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="project project-dark">
+        <div class="project-tile">
+          <img class="img-center" src="assets/chant-counter.png" alt="" />
+        </div>
+        <div class="project-tile">
+          <h3>Chant Counter</h3>
+          <h4>Problem</h4>
+          <p>
+            I needed a way to keep track of how many times I had chanted a
+            mantra on a string of beads.
+          </p>
+          <h4>Solution</h4>
+          <p>
+            I created a mobile web app that functions as a counter and uses
+            Local Storage to keep track of the number.
+          </p>
+          <a
+            class="body-link light"
+            href="https://jessica-davey.medium.com/chant-counter-creating-an-app-to-keep-track-6daad7c0d124"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read more about Chant Counter on Medium.</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://jessicadavey.github.io/chant-counter/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit Chant Counter <img src="assets/open_in_new.svg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="project project-light">
+        <div class="project-tile">
+          <img src="assets/wayfarer.png" class="img-center" alt="" />
+        </div>
+        <div class="project-tile">
+          <h3>Wayfarer Travel App</h3>
+          <p>
+            I designed a a desktop site and 3 app screens for a (fictional)
+            travel company that markets to 21 to 30 year olds. This was my final
+            project for the Designlab UX Academy Foundations course.
+          </p>
+          <a
+            class="body-link dark"
+            href="https://jessica-davey.medium.com/design-project-travel-website-and-app-44d9129b7a06"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read more about Wayfarer on Medium.</a
+          >
+        </div>
+      </div>
+      <div class="project-header project-light">
+        <a class="back-to-top dark" href="#top"
+          >Back to top <img src="assets/up-arrow.svg" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="exp-content">
+        <h2 class="section-header">Experience</h2>
+        <p class="job-title">Front End Web Developer</p>
+        <p class="company">HCA Healthcare</p>
+        <p class="dates">Oct 2020 - present (May 2021)</p>
+        <p class="job-description">
+          I transform marketing copy into usable HTML code, making sure that it
+          meets established best practices before publishing it to the content
+          management system. This requires liaising with stakeholders at HCA
+          facilities, making their requested final edits and advising on
+          alternatives where necessary. I also use my design knowledge to ensure
+          that elements such as buttons and videos are displayed on pages
+          harmoniously, and in a consistent manner across HCA sites. Other
+          duties include:
+        </p>
+        <ul class="job-duties">
+          <li>Keeping up with accessibility best practices</li>
+          <li>Sharing knowledge with teammates</li>
+          <li>
+            Undergoing quality assurance checks on both new and old web content
+          </li>
+          <li>
+            Remediating legacy code to bring it in line with current best
+            practices
+          </li>
+          <li>Relating content pieces with the CMS</li>
+          <li>
+            Clarifying elements of the Style Guide to continually ensure that
+            the team is creating consistent content
+          </li>
+        </ul>
+
+        <p class="job-title">Digital Accessibility Specialist</p>
+        <p class="company">HCA Healthcare</p>
+        <p class="dates">Feb - Apr 2020</p>
+        <p class="job-description">
+          I was a part of HCA’s initiative to build more accessible websites,
+          making sure that the sites for all of their 1100+ properties met or
+          exceeded WCAG 2.0 accessibility guidelines. I edited the HTML code
+          within a content management system to bring websites up to agreed-upon
+          standards. Some of my duties included:
+        </p>
+        <ul class="job-duties">
+          <li>Adding subtitles to YouTube videos</li>
+          <li>
+            Auditing existing content using tools such as Google Chrome’s
+            Lighthouse
+          </li>
+          <li>
+            Finding spelling errors with SiteImprove and correcting these errors
+          </li>
+          <li>Suggesting alternatives for inaccessible content</li>
+          <li>Testing site branding colors for color contrast compliance</li>
+          <li>
+            Adding COVID-19-related content to site and ensuring that
+            rapidly-changing COVID-19 information adhered to accessibility
+            guidelines
+          </li>
+        </ul>
+        <div class="exp-button">
+          <a
+            href="https://www.linkedin.com/in/jessica-davey/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            >View complete experience on LinkedIn
+            <img src="assets/open_in_new2.svg"
+          /></a>
+        </div>
+        <a class="back-to-top dark" href="#top"
+          >Back to top <img src="assets/up-arrow.svg" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-header">About</h2>
+      <div class="about-content">
+        <div><img src="assets/about-photo.png" alt="Jessica Davey" /></div>
+        <div>
+          <p>
+            I never knew what I wanted to do when I grew up, but I spent a lot
+            of time goofing off on the computer, writing HTML and simple
+            programs in Visual Basic. 💾 Despite this early attraction, I
+            completed a biology degree in Tacoma, WA, and a master’s in
+            oceanography in La Jolla, CA. 🐬 And then I decided that what I
+            really wanted to do was play music. 🎼🎤
+          </p>
+
+          <p>
+            This led me to achieving a degree in music at the Liverpool
+            Institute of Performing Arts in Liverpool, England. 🇬🇧 It was the
+            start of a long, tumultuous, and ultimately successful music career.
+            I traveled the world as a piano vocalist and singer-songwriter. 🌎
+            Over 10 years, I performed at bars in Scotland, cruise ships in
+            Australia, and hotels in Japan. ⛩ I even met a celebrity or two. 🌟
+          </p>
+
+          <p>
+            Eventually I came back to America and put away the rock-and-roll
+            lifestyle. Remembering that I had enjoyed writing rudimentary code
+            so much as a young person, I started learning web development.
+            Through various books and on-line courses, I learned HTML, CSS,
+            JavaScript, Ruby, and SQL, including Object-Oriented Programming. 🖥
+            I was then hired by a large company in Nashville, TN where I publish
+            web content in HTML, using a CMS. Recently I have been studying
+            responsive web design, and creating high-fidelity wireframes and
+            brand assets in Figma.
+          </p>
+        </div>
+      </div>
+      <a class="back-to-top light" href="#top"
+        >Back to top <img src="assets/up-arrow-light.svg" alt=""
+      /></a>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-header">Contact</h2>
+      <h3 class="email">E-mail: jessica [at] jessicadavey.com</h3>
+      <p class="social-links">
+        <a
+          href="https://www.linkedin.com/in/jessica-davey/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="assets/linkedin-blue.svg" alt="Jessica Davey on LinkedIn"
+        /></a>
+        <a
+          href="https://jessica-davey.medium.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="assets/medium-black.svg" alt="Jessica Davey on Medium"
+        /></a>
+      </p>
+      <a class="back-to-top dark" href="#top"
+        >Back to top <img src="assets/up-arrow.svg" alt=""
+      /></a>
+    </section>
+    <footer>
+      <a href="#top"><h2 class="section-header">Jessica Davey</h2></a>
+      <ul class="footer-nav">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">Copyright &copy; 2021 Jessica Davey</p>
+    </footer>
+  </body>
 </html>
