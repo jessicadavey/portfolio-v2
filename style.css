@@ -1,12 +1,15 @@
 :root {
   --primary1: #0073e6;
   --primary2: #0dc4fc;
+  --primary3: #3595f4;
   --secondary1: #1c4595;
   --secondary2: #06617e;
   --neutral1: #4c515a;
   --neutral2: #dce0e8;
   --bg-color: #fafafa;
   --text-color: #1b1d21;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 body {
@@ -67,8 +70,16 @@ a.light {
   color: var(--neutral2);
 }
 
+a.light:hover {
+  color: var(--white);
+}
+
 a.dark {
   color: var(--neutral1);
+}
+
+a.dark:hover {
+  color: var(--black);
 }
 
 .btn {
@@ -89,9 +100,17 @@ a.dark {
   color: var(--bg-color);
 }
 
+.btn-primary:hover {
+  background: var(--primary3);
+}
+
 .btn-secondary {
   background: var(--bg-color);
   color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background: var(--white);
 }
 
 .section-header {
@@ -134,6 +153,10 @@ li.nav-item a {
   margin: 12px 0px;
 }
 
+li.nav-item a:hover {
+  color: var(--black);
+}
+
 /* hero section */
 
 #hero {
@@ -147,7 +170,7 @@ li.nav-item a {
   line-height: 1.2;
 }
 
-.hero-button {
+#hero a {
   display: block;
   width: 153px;
   margin: 0 auto;
@@ -288,6 +311,11 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  color: var(--neutral2);
+  text-decoration: none;
+}
+
 .footer-nav {
   margin: 24px 0;
 }
@@ -372,7 +400,7 @@ footer a {
     width: 90%;
   }
 
-  .hero-button {
+  #hero a {
     width: 131px;
   }
 
