@@ -158,7 +158,7 @@ li.nav-item a {
 
 .project {
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,7 +176,7 @@ li.nav-item a {
 }
 
 .project-tile {
-  width: 33%;
+  max-width: 33%;
   margin: 24px 60px;
 }
 
@@ -250,6 +250,10 @@ li.nav-item a {
   justify-content: center;
 }
 
+.profile-photo {
+  max-width: none;
+}
+
 .about-content div {
   padding: 0 24px;
 }
@@ -296,4 +300,141 @@ footer a {
 .copyright {
   font-size: 16px;
   color: var(--bg-color);
+}
+
+/* mobile and tablet version */
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p,
+  a {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  a.body-link {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .section-header {
+    padding-top: 12px;
+  }
+
+  /* navigation */
+
+  ul.navigation {
+    flex-direction: column;
+    margin: 0 0 24px 0;
+  }
+
+  li.nav-item {
+    display: inline;
+    margin: 12px 0px 0px 0px;
+  }
+
+  /* hero section */
+
+  #hero {
+    height: 33vh;
+  }
+
+  .hero-text {
+    max-width: 75%;
+    margin: 0 auto 24px auto;
+    line-height: 1.2;
+  }
+
+  .hero-button {
+    width: 131px;
+  }
+
+  /* projects section */
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 24px;
+  }
+
+  .project-dark {
+    flex-direction: column;
+  }
+
+  .project-tile {
+    max-width: 100%;
+    margin: 12px 60px;
+  }
+
+  .img-center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* experience section */
+
+  .exp-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .job-title {
+    font-size: 18px;
+  }
+
+  .company {
+    font-size: 18px;
+  }
+
+  .dates {
+    font-size: 18px;
+  }
+
+  .job-description {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .job-duties {
+    font-size: 18px;
+    margin: 24px 48px;
+  }
+
+  .exp-button {
+    width: 238px;
+  }
+
+  /* about section */
+
+  .about-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content div {
+    padding: 0;
+  }
 }
